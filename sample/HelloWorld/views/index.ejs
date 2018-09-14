@@ -9,14 +9,39 @@
         var sessionId = '<%= sessionId %>';
         var token = '<%= token %>';
     </script>
+    <style>
+        body {
+            width: 100vh;
+            height: 100vh;
+            background: #216CD2;
+            margin: 0 auto;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h2>Hello, World!</h2>
 
-    <div id="publisher"></div>
 
-    <div id="subscribers"></div>
+    <h2 style="display: block; text-align: center;">Video call</h2>
+
+    <div id="publisher" style="  display: block;
+  margin: 0 auto;
+  width: fit-content;"></div>
+
+    <div id="subscribers" style="  display: block;
+  margin: 20px auto;
+  width: fit-content;"></div>
+
+    <div style="text-align: center; margin: 50px auto; font-size: 16px">
+        Send this link to whom you want to start video call:
+        <span style="text-decoration: underline; font-weight: 500"></span>
+    </div>
 
     <script src="/js/helloworld.js"></script>
+    <script>
+        var span = document.getElementsByTagName('span')[0];
+        span.innerText = window.location;
+    </script>
 </body>
 </html>

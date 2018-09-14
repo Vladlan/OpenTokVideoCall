@@ -7,8 +7,8 @@ var OpenTok = require('../../lib/opentok');
 var app = express();
 
 var opentok;
-var apiKey = process.env.API_KEY;
-var apiSecret = process.env.API_SECRET;
+var apiKey = '46185642';
+var apiSecret = '1170e034f96aa02ba55c56e6d2fa5e1a63f94f10';
 
 // Verify that the API Key and API Secret are defined
 if (!apiKey || !apiSecret) {
